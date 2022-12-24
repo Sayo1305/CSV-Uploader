@@ -1,38 +1,111 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.ContainerClass{
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to top , #c38D9E , #41B3A3);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.InputFile{
+  padding: 10px;
+  border-radius: 10px;
+  background: rgba( 255, 255, 255, 0.35 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 10.5px );
+  border-radius: 10px;
+  width: 300px;
+  border: 1px solid #000;
+  height: 200px;
+  justify-content: center;
+  position: absolute;
   display: flex;
   flex-direction: column;
+  transform: translate(-50% , -50%);
+  left: 50%;
+  top: 50%;
+  gap: 10px;
+  align-items: center;
+}
+
+.LoginContainer{
+  width: 100%;
+  display: flex;
+  height: 100vh;
+  background: linear-gradient(to top , #17cf42 , #00486e);
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.SignUpContainer{
+  width: 100%;
+  display: flex;
+  height: 100vh;
+  background: linear-gradient(to top , #41B3A3 , #00486e);
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+.ButtonSubmit{
+  border: 1px solid #000;
+  padding: 10px;
+  border-radius: 5px;
+  background: #c38D9E;
+  cursor: pointer;
+}
+
+.SignUpBox{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 50%;
+  height: auto;
+  padding: 20px;
+  z-index: 10;
+  background: rgba(255, 255, 255, 0.46);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.9px);
+  -webkit-backdrop-filter: blur(7.9px);
+}
+
+
+.InputSignup{
+  text-align: center;
+  outline:none;
+  color: blueviolet;
+  margin: 0 auto;
+  border: rgba(0, 0, 0, 0.1) 1px solid;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 1.2rem;
+  width: 50%;
+}
+.InputSignup.button{
+  color: #fff;
+  cursor: pointer;
+  background: linear-gradient(to left , #972780 , #F0642F);
+}
+.InputLoginContainer{
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.InputLogin.button{
+  position: absolute;
+  top: 60%;
+  padding: 10px;
+  border: none;
+  font-size: 20px;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  background: linear-gradient(to left , #00486e , #17cf42);
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
