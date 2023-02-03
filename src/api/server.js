@@ -7,7 +7,7 @@ const mongoose = require("mongoose");
 const uploadCatalog= require('./Routes/UploadRoute');
 const userCatalog = require('./Routes/UserRoute');
 const corsOptions = {
-  origin: process.env.REACT_PORT,
+  origin:"http://localhost:3000",
   credentials: true, //access-control-allow-credentials:true
   optionSuccessStatus: 200,
 };
@@ -16,7 +16,7 @@ app.use(cors(corsOptions));
 app.use(express.json());
 app.use(bodyparser.json());
 mongoose
-  .connect(process.env.MONGO_URL, {
+  .connect(process.env.REACT_APP_MONGO_URL, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
@@ -33,6 +33,6 @@ app.use('/Upload' , uploadCatalog);
 
 
 
-app.listen(process.env.PORT, () => {
-  console.log(`Example app listening on port ${process.env.PORT}`);
+app.listen(process.env.REACT_APP_PORT, () => {
+  console.log(`Example app listening on port ${process.env.REACT_APP_PORT}`);
 });

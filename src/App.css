@@ -17,7 +17,7 @@
   box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
   backdrop-filter: blur( 10.5px );
   border-radius: 10px;
-  width: 300px;
+  width: auto;
   border: 1px solid #000;
   height: 200px;
   justify-content: center;
